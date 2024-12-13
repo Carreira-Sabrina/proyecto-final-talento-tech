@@ -46,7 +46,7 @@ async function traerDatosAPI(){
 
 }
 
-const productos = await traerDatosAPI();                 // ESTA VARIABLE TIENE QUE SER GLOBAL !! POR AHORA 🦜
+const productos = await traerDatosAPI(); 
 
 
 //Generar contenido dinamicamente
@@ -65,17 +65,9 @@ generarHTMLProductos(productos,contenedorProductos);
 prepararBotonesAgregarCarrito()
 
 
-
-//A ver que hay en el carrito ?
-
 //El carrito o bien empieza vacío o bien trae algo del localStorage
 let contenidoCarritoCompras = cargarCarritoDeLocalStorage();
 let carritoCompras = contenidoCarritoCompras || [];
-
-
-
-
-
 
 //Funciones para agregar los botones de agregar producto al carrito
 //===============================================================================
@@ -93,9 +85,7 @@ export function prepararBotonesAgregarCarrito(){
     botonesAgregarAlCarrito.forEach((boton)=> boton.addEventListener("click",agregarProductoAlCarrito))
 }
 
-
-//Acá hay que traer el callback
-//Callcack del eventListener de los botones
+//Callback del eventListener de los botones
 
 function agregarProductoAlCarrito(e){
     /*WORK IN PROGRESS */
