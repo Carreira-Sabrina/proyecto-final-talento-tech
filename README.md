@@ -12,7 +12,7 @@ Se carga contenido diámicamente de [Fake Store API](https://fakestoreapi.com/)
 
 ---
 
-[ Demo en Github-Pages](https://carreira-sabrina.github.io/talento-tech-ecommerce/)
+[ Demo en Github-Pages](https://carreira-sabrina.github.io/proyecto-final-talento-tech/)
 
 
 ---
