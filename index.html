@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talento Tech Store</title>
+
+    <!--CDN FONTAWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="css/global.css">
+    
+    <link rel="stylesheet" href="css/header.css">
+    
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="stylesheet" href="css/footer.css">
+
+</head>
+
+<body>
+
+    <div class="contenedor-principal">
+
+        <header>
+
+            <!--LOGO-->
+            <div class="logo">
+                <a href="#">Talento Tech Store <span><i class="fa-solid fa-gift"></i></span></a>
+            </div>
+
+            <!--NAV-->
+            <nav>
+                <ul class="menu-links" id="menu-links">
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <!--PRODUCTOS-->
+                    <li>
+                        <a href="#seccion-productos">Productos</a>
+                    </li>
+                    <!--ACERCA DE -->
+                    <li>
+                        <a href="html/acerca-de.html">Acerca de</a>
+                    </li>
+                    <!--CONTACTO -->
+                    <li>
+                        <a href="html/contacto.html">Contacto</a>
+                    </li>
+                </ul> 
+
+                <!--EL ICONO DEL CARRITO-->
+                <div class="carrito">
+                    <a href="html/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <!--acá tiene que ir el número con la cantidad de productos que hay en el carrito-->
+                    <span id="numero-carrito"></span>
+                </div>
+
+                <!--BOTON HAMBURGUESA SOLO MENU MOVIL-->
+                <div class="menu-movil-btn" id="menu-movil-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+            </nav> <!--fin nav-->
+            
+        </header> <!-- fin header-->
+    
+        <section class="hero">
+            <div class="hero-contenido">
+                <h1>Disfrutá comprar desde tu casa</h1>
+
+                <a href="html/acerca-de.html#inicio-resenhas" class="cta-btn">Enterate más</a>
+            </div>
+
+        </section> <!-- fin hero-->
+
+        <main>
+            <section id="seccion-productos">
+                <h2>Nuestros productos</h2>
+
+                <!--En esta seccion hay in input search y in select-->
+                <div class="busqueda-y-select">
+                    
+                    <div class="contenedor-select">
+                        <label for="selector-categorias">Filtrar por categoría:</label>
+                    
+                        <select name="selector-categorias" id="selector-categorias">
+                            <!-- Las opciones de este elemento se cargarán dinámicamente con JS -->
+                            
+                        </select>
+    
+                    </div> <!--fin contenedor select-->
+
+                </div> <!--fin contenedor busqueda y select-->
+
+
+                
+
+                <div class="contenedor-productos" id="contenedor-productos">
+                    
+                    <!--LOS PRODUCTOS SE CARGAN DINAMICAMENTE DESDE UNA API-->
+
+
+
+
+                </div> <!--fin contenedor productos-->
+    
+            </section> <!-- fin seccion productos-->
+    
+        </main> <!-- fin main-->
+
+        <footer id="footer">
+            <div class="logo">
+                <h3>Talento Tech Shop <span><i class="fa-solid fa-gift"></i></span></h3>
+            </div>
+
+            <div class="footer-contenido">
+                <p>Seguinos en nuestras redes sociales:</p>
+
+                <ul>
+                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="https://x.com/?lang=es"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/?hl=es"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li><a href="https://ar.pinterest.com/"><i class="fa-brands fa-square-pinterest"></i></a></li>
+                </ul>
+            </div>
+    
+        </footer> <!-- fin footer-->
+
+    </div> <!-- fin contenedor principal-->
+
+
+    <script src="js/menu-movil.js"></script>
+    <script type="module" src="js/actualizarNumeroCarrito.js"></script>
+    <script type="module" src="js/index.js"></script>
+
+</body>
+</html>

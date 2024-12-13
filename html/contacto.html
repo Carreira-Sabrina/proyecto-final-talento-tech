@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talento Tech Store - Contacto</title>
+
+
+    <!--CDN FONTAWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+</head>
+
+<body>
+    <div class="contenedor-principal">
+
+        <header>
+
+            <!--LOGO-->
+            <div class="logo">
+                <a href="../index.html">Talento Tech Store <span><i class="fa-solid fa-gift"></i></span></a>
+            </div>
+
+            <!--NAV-->
+            <nav>
+                <ul class="menu-links" id="menu-links">
+                    <li>
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <!--PRODUCTOS-->
+                    <li>
+                        <a href="../index.html#seccion-productos">Productos</a>
+                    </li>
+                    <!--ACERCA DE -->
+                    <li>
+                        <a href="acerca-de.html">Acerca de</a>
+                    </li>
+                    <!--CONTACTO -->
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                </ul> 
+
+                <!--EL ICONO DEL CARRITO-->
+                <div class="carrito">
+                    <a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <span id="numero-carrito">0</span>
+                </div>
+
+                <!--BOTON HAMBURGUESA SOLO MENU MOVIL-->
+                <div class="menu-movil-btn" id="menu-movil-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+            </nav> <!--fin nav-->
+
+
+
+        </header> <!-- fin header-->
+
+
+
+        <main>
+
+            <!--SECCION CONTACTO-->
+            <section class="seccion-contacto">
+
+                <h1 class="titulo-contacto">Nos encanta recibir mensajes !</h1>
+                <h3 class="subtitulo-contacto">Si usás el formulario te contactaremos a la brevedad</h3>
+
+                <!--FORMULARIO DE CONTACTO-->
+
+                <form action="https://formspree.io/f/xbljlovp" method="post" id="formulario-contacto">
+
+                    <div class="campo-formulario">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                    </div>
+    
+                    <div class="campo-formulario">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                    </div>
+    
+                    <div class="campo-formulario">
+                        <label for="comentario">Tu comentario</label>
+                        <textarea name="comentario" id="comentario" placeholder="Quiero decirles que..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="cta-btn" id="btn-enviar-formulario">Enviar formulario <i class="fa-regular fa-paper-plane"></i></button>
+                    
+    
+                </form> <!--fin formulario contacto-->
+
+
+            </section> <!--fin seccion contacto-->
+
+
+            <!-- SECCION DEL IFRAME CON UBICACION-->
+            <section id="ubicacion">
+                <h2>También podés visitarnos en nuestras oficinas:</h2>
+
+                <div class="ubicacion-contenedor-mapa">
+                    <iframe id="iframe-mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13131.600740787308!2d-58.5583604!3d-34.6319626!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7fe97b657a3%3A0xe22fb5b7c759d3fe!2sCampito%20de%20Ciudadela!5e0!3m2!1ses-419!2sar!4v1729576855655!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                
+
+            </section> <!--fin seccion ubicacion-->
+
+    
+        </main> <!-- fin main-->
+
+        <footer id="footer">
+            <div class="logo">
+                <h3>Talento Tech Shop <span><i class="fa-solid fa-gift"></i></span></h3>
+            </div>
+
+            <div class="footer-contenido">
+                <p>Seguinos en nuestras redes sociales:</p>
+
+                <ul>
+                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="https://x.com/?lang=es"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/?hl=es"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li><a href="https://ar.pinterest.com/"><i class="fa-brands fa-square-pinterest"></i></a></li>
+                </ul>
+            </div>
+    
+        </footer> <!-- fin footer-->
+
+    </div> <!-- fin contenedor principal-->
+
+    <script src="../js/menu-movil.js"></script>
+    <script type="module" src="/js/actualizarNumeroCarrito.js"></script>
+    <script src="/js/contacto.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+/* En este archivo se declarn variables estilos comunes a todo el sitio y clases de utilidad*/
+
+
+/* FUENTES */
+/*========================================*/
+    /* PARA TITULOS ETC */
+/*Merriweather Sans"*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+    /* REGULAR */
+/*Lato*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+/* VARIABLES*/
+/*========================================*/
+:root{
+    /*FUENTES*/
+    --ff-destaque: "Merriweather Sans", sans-serif;
+    --ff-regular: "Lato", sans-serif;
+    /* COLORES */
+    --color-baby-powder: #FFFCF9;
+    --color-rose: #FF0080;
+    --color-onyx: #3C3C3C;
+    --color-night: #0C0F0A;
+    --color-eerie-black: #1B1B1E;
+    --color-bittersweet: #FF5A5F;
+    --color-verdigris: #00AFB5;
+
+    /*Medidas*/
+    --header-height:110px;
+
+}
+
+/* RESET */
+/*========================================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Estilos de elementos HTML */
+
+body{
+    font-family: var(--ff-regular);
+}
+
+h1{
+    font-family: var(--ff-destaque);
+    font-weight: 800;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+}
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+
+/* CLASES DE UTILIDAD*/
+/*========================================*/
+.contenedor-principal{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.cta-btn{
+    background-color: var(--color-rose);
+    color: var(--color-baby-powder);
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-family: var(--ff-regular);
+}
+

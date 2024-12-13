@@ -1,0 +1,132 @@
+
+h2{
+    text-align: center;
+    margin: 1.75rem 0;
+}
+
+
+
+/* La sección hero con el video */
+
+.hero-video{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-video-overlay{
+    position: absolute;
+    top: 0;
+    right: 0; 
+    width: 35%; 
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero-video-overlay h1{
+    color: white;
+    font-size: 3.75rem; 
+    text-align: center;
+}
+
+
+
+
+/* La seccion de las reseñas */
+
+
+.resenhas h2{
+    text-align: center;
+    margin: 1.75rem 0;
+}
+
+.resenhas-contenedor{
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0.75rem;
+}
+
+.resenha-tarjeta{
+    padding: 0.75rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 0.75rem;
+}
+
+.resenha-tarjeta__superior{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.resenha-tarjeta__imagen img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.link-contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.25rem 0;
+}
+
+
+
+
+/* MEDIA QUERIES */
+/* ____________________________________________ */
+
+@media screen and (max-width: 767px){
+    /*Se esconde el video en pantallas pequeñas */
+    .hero-video video{
+        display: none;
+    }
+    
+    .hero-video-overlay{
+        position: static;
+        width: 100%;
+        background-color: var(--color-rose);
+        font-size: 1.25rem;
+    }
+
+    .hero-video-overlay h1{
+        font-size: 2.75rem; 
+    }
+
+
+    .resenhas-contenedor{
+        grid-template-columns: 1fr;
+        
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    /*Se muestra el video pero el overlay pasa a estar debajo*/
+    .hero-video-overlay{
+        background-color: var(--color-rose);
+        position: static;
+        width: 100%;
+    }
+
+    .hero-video-overlay h1{
+        font-size: 3.25rem; 
+    }
+
+    .resenhas-contenedor{
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+}

@@ -1,0 +1,125 @@
+/* Estilos de carrito.html */
+/* ____________________________________________________________________________________*/
+
+p{
+    font-size: 1.5rem;
+}
+
+
+
+.seccion-productos h2{
+    text-align: center;
+}
+
+/*El article*/
+.producto-carrito{
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+
+    /*border-bottom: 1px solid var(--color-onyx);*/
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.producto-carrito__miniatura img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+
+.producto-carrito__nombre{
+    max-width: 25%;
+}
+
+.producto-carrito__nombre, .producto-carrito__precio, .producto-carrito__cantidad, .producto-carrito__subtotal{
+    text-align: center;
+}
+
+.producto-carrito__aumentar-cantidad, .producto-carrito__descontar-cantidad,.producto-carrito__eliminar{
+    font-size: 1.5rem;
+    padding: 12px;
+    border-radius: 8px;
+    color: var(--color-baby-powder)
+}
+
+.producto-carrito__descontar-cantidad, .producto-carrito__aumentar-cantidad {
+    background-color: var(--color-verdigris);
+}
+
+.producto-carrito__eliminar{
+    background-color: var(--color-bittersweet);
+}
+
+/*El mensaje que aparece solo cuando el carrito está vacio*/
+.msg-carrito-vacio{
+    font-size: 1.75rem;
+    text-align: center;
+    margin: 1.5rem auto;
+}
+
+#contenedor-finalizar-compra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+}
+
+/*dialogo finalizar compra*/
+#dialogo-finalizar-compra{
+    /*NO PONER DISPLAY FLEX ACA PORQUE SI NO EL MODAL YA SALE MOSTRANDOSE !*/
+    padding: 1.5rem;
+}
+
+#dialogo-finalizar-compra h2{
+    color: var(--color-rose);
+}
+
+#dialogo-finalizar-compra p{
+    margin-bottom: 1.25rem;
+}
+
+#lista-articulos-comprar{
+    margin-bottom: 1.5rem;
+}
+
+#btn-comprar, #btn-volver-carrito{
+    padding: 0.75rem 1.25rem;
+    margin-top: 1rem;
+    border-radius: 0.75rem;
+    border: none;
+    color: var(--color-baby-powder);
+}
+
+#btn-comprar{
+    background-color: var(--color-verdigris);
+}
+
+#btn-volver-carrito{
+    background-color: var(--color-bittersweet);
+}
+
+/*MEDIA QUERIES */
+/*_______________________________________________*/
+
+@media screen and (max-width: 768px) {
+    .producto-carrito{
+        flex-direction: column;
+        max-width: 75%;
+    }
+
+    .producto-carrito__nombre{
+        max-width: 55%;
+    }
+
+    .producto-carrito__nombre,.producto-carrito__precio, .producto-carrito__cantidad{
+        margin-bottom: 0.85rem;
+    }
+    
+
+} /*fin media querie*/
+
+

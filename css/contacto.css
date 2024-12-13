@@ -1,0 +1,89 @@
+/*Estilos de contacto.html*/
+
+.seccion-contacto{
+    padding: 1.25rem;
+    background-image: url("../assets/img/jeshoots-com-pUAM5hPaCRI-unsplash.jpg");
+    min-height:75vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.titulo-contacto, .subtitulo-contacto{
+    margin-bottom: 1.5rem;
+}
+
+.subtitulo-contacto, .titulo-contacto{
+    text-align: center;
+}
+
+#formulario-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    padding: 2rem 0.5rem;
+    border-radius: 1rem;
+}
+
+
+.campo-formulario{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+    padding: 0.75rem;
+}
+
+.campo-formulario label,input,textarea{
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+
+.campo-formulario input,textarea{
+    min-width: 60%;
+    font-size: 2rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 2px solid var(--color-rose);
+    background-color: var(--color-baby-powder);
+}
+
+.cta-btn{
+    /*en el eje secundario, que seria horizontal porque flex-direction:column */
+    align-self:center;
+}
+
+
+/*Estilos de la seccion que tiene el iframe con el mapa*/
+
+#ubicacion h2{
+    text-align: center;
+    margin: 1.25rem 0;
+}
+
+
+.ubicacion-contenedor-mapa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 767px){
+
+    .titulo-contacto{
+        font-size: 2.75rem;
+    }
+
+    .campo-formulario{
+        flex-direction: column;
+    }
+
+    /*Iframe con mapa*/
+    #iframe-mapa{
+        width:90%;
+    }
+}
