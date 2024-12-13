@@ -37,13 +37,14 @@ const URL_API = "https://fakestoreapi.com/products"
 
 
 //Trae y devuelve los datos de la api que se almacenan para generar contenido dinamicamente
-//REESCRIBIR CON TRY - CATCH !! 🦜🦜🦜🦜🦜🦜🦜🦜🦜🦜🦜⛔
-
 async function traerDatosAPI(){
-    const respuestaAPI = await fetch(URL_API);
-    const respuestaAPIJson = await respuestaAPI.json();
-    return respuestaAPIJson;
-
+    try{
+        const respuestaAPI = await fetch(URL_API);
+        const respuestaAPIJson = await respuestaAPI.json();
+        return respuestaAPIJson;
+    }catch (error){
+        console.log(error)
+    }
 }
 
 const productos = await traerDatosAPI(); 
